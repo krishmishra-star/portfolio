@@ -1,0 +1,89 @@
+/* Typography Utilities */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  font-weight: 400;
+  letter-spacing: var(--tracking-mono);
+  line-height: var(--leading-mono);
+  color: var(--color-muted);
+}
+
+.mono-label--ink {
+  color: var(--color-ink);
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 800;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 800;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  font-weight: 800;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+p {
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--color-ink);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+/* Hand-placed Highlighter Swipe */
+.highlighter {
+  background-color: var(--color-accent);
+  color: var(--color-ink);
+  padding: 0.08em 0.35em;
+  border-radius: 2px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  display: inline;
+  font-weight: inherit;
+}
+
+/* Outlined Project Number (transparent fill, 1.5px stroke) */
+.outlined-num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(52px, 8vw, 92px);
+  line-height: 0.9;
+  letter-spacing: var(--tracking-tight);
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-ink);
+  user-select: none;
+}
+
+/* Section Index Marker (e.g., 01 / work) */
+.section-marker {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  font-weight: 500;
+  color: var(--color-ink);
+  display: block;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,92 @@
+/* Main Layout Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.site-main {
+  padding-bottom: clamp(60px, 10vw, 120px);
+}
+
+.section {
+  padding-top: var(--section-spacing-y);
+  position: relative;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-bottom: var(--border-ink);
+  padding-bottom: 24px;
+  margin-bottom: clamp(40px, 6vw, 72px);
+}
+
+.section-header__title-group {
+  max-width: 720px;
+}
+
+.section-header__note {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  color: var(--color-muted);
+  max-width: 320px;
+  text-align: right;
+  line-height: var(--leading-mono);
+}
+
+/* Staggered Project Offsets (Desktop) */
+.project-card:nth-child(4n + 1) {
+  margin-left: var(--offset-project-1);
+}
+
+.project-card:nth-child(4n + 2) {
+  margin-left: var(--offset-project-2);
+}
+
+.project-card:nth-child(4n + 3) {
+  margin-left: var(--offset-project-3);
+}
+
+.project-card:nth-child(4n + 4) {
+  margin-left: var(--offset-project-4);
+}
+
+/* Scroll reveal transition */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile & Tablet Breakpoint rules */
+@media (max-width: 700px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .section-header__note {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .project-card:nth-child(4n + 1),
+  .project-card:nth-child(4n + 2),
+  .project-card:nth-child(4n + 3),
+  .project-card:nth-child(4n + 4) {
+    margin-left: 0 !important;
+  }
+}

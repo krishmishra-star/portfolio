@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Shreyas Mishra — Full-stack Developer & Student in Mumbai</title>
+  <meta name="title" content="Shreyas Mishra — Full-stack Developer & Student in Mumbai" />
+  <meta name="description"
+    content="Personal portfolio of Shreyas Mishra, a student developer in Mumbai building full-stack web apps end to end with Node, Express, MongoDB, and React." />
+  <link rel="canonical" href="https://shreyasmishra.dev/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shreyasmishra.dev/" />
+  <meta property="og:title" content="Shreyas Mishra — Full-stack Developer & Student in Mumbai" />
+  <meta property="og:description"
+    content="I build full-stack web apps. The screens, the API, the database, and then I put it on a real URL so anyone can click around in it." />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:url" content="https://shreyasmishra.dev/" />
+  <meta property="twitter:title" content="Shreyas Mishra — Full-stack Developer & Student in Mumbai" />
+  <meta property="twitter:description"
+    content="I build full-stack web apps. The screens, the API, the database, and then I put it on a real URL so anyone can click around in it." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Preconnect & Load Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Bar / Header -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="#hero" class="site-header__logo" aria-label="Shreyas Mishra homepage">
+        shreyas.mishra / mumbai
+      </a>
+      <nav class="site-header__nav" aria-label="Main Navigation">
+        <a href="#work" class="site-header__nav-link">work</a>
+        <a href="#toolbox" class="site-header__nav-link">toolbox</a>
+        <a href="#about" class="site-header__nav-link">about</a>
+        <a href="#contact" class="site-header__nav-link">say hi</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="site-main" role="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-main">
+          <span class="hero-eyebrow">software developer / full-stack / still a student</span>
+          <h1 id="hero-title" class="hero-title">
+            <span class="hero-title__first">Shreyas</span>
+            <span class="hero-title__last">Mishra<span class="hero-title__dot" aria-hidden="true">.</span></span>
+          </h1>
+
+          <div class="hero-content-split">
+            <div class="hero-content-left">
+              <p class="hero-intro">
+                I build full-stack web apps. The screens, the API, the database, and then I put it <mark
+                  class="highlighter">on a real URL</mark> so anyone can click around in it. Right now that's four
+                projects, three of them live.
+              </p>
+              <div class="hero-actions">
+                <a href="#work" class="btn btn--primary">See what I've built</a>
+                <a href="https://github.com/krishmishra-star" class="btn btn--secondary" target="_blank"
+                  rel="noopener">My GitHub &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Rotated "Right Now" Info Box -->
+            <aside class="right-now-box" aria-label="Current status and focus">
+              <div class="right-now-box__header">right now</div>
+              <ul class="right-now-list">
+                <li class="right-now-item">
+                  <span class="right-now-item__label">open to:</span>
+                  <span>internships, small freelance jobs</span>
+                </li>
+                <li class="right-now-item">
+                  <span class="right-now-item__label">based in:</span>
+                  <span>Mumbai</span>
+                </li>
+                <li class="right-now-item">
+                  <span class="right-now-item__label">most used:</span>
+                  <span>JavaScript, Node, MongoDB, React</span>
+                </li>
+                <li class="right-now-item">
+                  <span class="right-now-item__label">also:</span>
+                  <span>C++ and DSA, still grinding</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 01: Work -->
+    <section id="work" class="section work-section reveal-on-scroll" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__title-group">
+            <span class="section-marker">01 / work</span>
+            <h2 id="work-title" class="h2">Things I actually shipped</h2>
+          </div>
+          <p class="section-header__note">
+            3 of these 4 have a live link. The fourth is code only for now.
+          </p>
+        </div>
+
+        <!-- Dynamic Projects Container -->
+        <div id="projects-list" class="projects-container">
+          <!-- Populated via src/main.js from src/data/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Toolbox -->
+    <section id="toolbox" class="section toolbox-section reveal-on-scroll" aria-labelledby="toolbox-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__title-group">
+            <span class="section-marker">02 / toolbox</span>
+            <h2 id="toolbox-title" class="h2">What I use, no progress bars</h2>
+          </div>
+        </div>
+
+        <div class="toolbox-grid">
+          <div class="toolbox-column">
+            <div class="toolbox-card">
+              <h3 class="toolbox-card__header">most days</h3>
+              <p class="toolbox-card__content">
+                JavaScript, Node.js, Express, MongoDB, React, Tailwind CSS
+              </p>
+            </div>
+          </div>
+
+          <div class="toolbox-column">
+            <div class="toolbox-card">
+              <h3 class="toolbox-card__header">picked up on a project</h3>
+              <p class="toolbox-card__content">
+                Vite, Recharts, Chart.js, Supabase, JWT auth, Multer uploads, MediaPipe, Zustand, and deploying on
+                Vercel, Netlify and Render.
+              </p>
+            </div>
+          </div>
+
+          <div class="toolbox-column">
+            <div class="toolbox-card">
+              <h3 class="toolbox-card__header">still working on</h3>
+              <p class="toolbox-card__content">
+                C++ and data structures and algorithms. I know the basics, I'm working through the rest, because I want
+                my logic to be as good as my UI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: About -->
+    <section id="about" class="section about-section reveal-on-scroll" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__title-group">
+            <span class="section-marker">03 / about</span>
+          </div>
+        </div>
+
+        <div class="about-layout">
+          <h2 id="about-title" class="about-statement">
+            Finish the thing, then make it <mark class="highlighter">better.</mark>
+          </h2>
+
+          <div class="about-story">
+            <p>
+              I'm Shreyas, a student in Mumbai. I learn faster when there's a real thing to build, so I skip the
+              tutorial loop and pick something I'd actually use: a complaint tracker, a shop, a dashboard.
+            </p>
+            <p>
+              Public Issue began as a college project. It ended up with logins, an admin panel, photo uploads and a live
+              URL. That's how most of mine go. Start small, keep poking at it until it runs on its own.
+            </p>
+            <p>
+              I'm looking for an internship or small freelance work where I can keep building things end to end, and
+              keep getting better at it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Contact / Say Hi -->
+    <section id="contact" class="section contact-section reveal-on-scroll" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__title-group">
+            <span class="section-marker">04 / say hi</span>
+          </div>
+        </div>
+
+        <h2 id="contact-title" class="contact-heading">
+          Got something to build, or an internship open? Talk to me.
+        </h2>
+
+        <div class="contact-rows">
+          <div class="contact-row">
+            <span class="contact-row__label">github</span>
+            <a href="https://github.com/krishmishra-star" class="contact-row__value" target="_blank" rel="noopener">
+              github.com/krishmishra-star <span aria-hidden="true">&nearr;</span>
+            </a>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row__label">email</span>
+            <a href="mailto:krrishm45@gmail.com" class="contact-row__value">
+              krrishm45@gmail.com <span aria-hidden="true">&nearr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <span>made by hand in Mumbai</span>
+      <span>last touched Oct 2026</span>
+    </div>
+  </footer>
+
+  <!-- App JavaScript Entry -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
